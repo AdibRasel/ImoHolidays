@@ -1,3 +1,11 @@
+.Full_Navbar{
+    width: 100%;
+    height: 76px;
+    position: fixed;
+    background-color: #ffffffba;
+    border-bottom: 1px solid #ffffffb3;
+    box-shadow: 0px 6px 10px silver;
+}
 .navbar{
     width: 100%;
     height: 75px;
@@ -9,7 +17,6 @@
     z-index: 2;
     box-shadow: 2px 0px 20px #333;
     padding-top: 5px;
-    position: fixed;
 }
 
 .nav-menu{
@@ -52,22 +59,22 @@ li:hover{
 }
 
 .logo img{
-    width: 130px;
+    width: 150px;
     height: 70px;
     margin-top: -7px;
     padding-top: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 
 .logo img:hover{
-    width: 132px;
+    width: 152px;
     height: 72px;
     border-bottom: 2px solid #12aeec;
     /* padding: 10px; */
     color: #333;
     /* transition:  0.9s; */
-    border-radius: 10px;
+    border-radius: 20px;
     transition: all .35s ease;
     /* font-size: 18px; */
     cursor: pointer;
@@ -86,7 +93,7 @@ li:hover{
 }
 
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 990px){
 
     .mobile-menu{
         display: block;

@@ -13,6 +13,8 @@ function Navbar() {
   const handleNav = ()=> setNev(!nav)
   
   return (
+<div className='Full_Navbar'>
+
     <div className={nav ? "navbar navbar-bg": "navbar"}>
         <div className="logo">
             <img src={logo} alt="" />
@@ -53,8 +55,8 @@ function Navbar() {
 
             <div className="mobile-menu-button">
               <div className="menu-icon">
-                  <button>Search</button>
-                  <button>Account</button>
+                  {/* <button>Search</button>
+                  <button>Account</button> */}
               </div>
 
               <div className="social-icon">
@@ -69,6 +71,7 @@ function Navbar() {
         </div>
         
     </div>
+</div>
   )
 }
 
