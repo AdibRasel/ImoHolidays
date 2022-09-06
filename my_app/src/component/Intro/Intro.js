@@ -15,7 +15,7 @@ function Intro() {
                     <span className='one_color'> Your </span> <br /> Trusted Partner
                 </span><br />
                 <span className='sub_title'>
-                    imoHolidays
+                    <span className='two_color'>imo</span>Holidays
                 </span><br />
                 <button className='call_btn'>✆ Contact Us 01827-647280</button>
 

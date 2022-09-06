@@ -1,9 +1,35 @@
 import React from 'react'
 import "./ServiceStyle.css"
 
+
 import govtAgency from "../../assets/1govt-agency.png"
 
+import shape1 from "../../assets/shape1.gif"
+import shape2 from "../../assets/shape2.gif"
+import shape3 from "../../assets/shape3.gif"
+import shapeimg1 from "../../assets/shapeimg1.jpg"
+
 function Service() {
+
+
+   
+
+    // counter code 
+    var counter = setInterval(updatedCount, 50);
+    var upto=1400;
+     
+    function updatedCount() {
+      var count = document.getElementById('counter');
+      count.innerHTML= ++upto;
+      if(upto === 1500) {
+        clearInterval(counter);
+      }
+    }
+    // end counter code 
+
+
+
+
   return (
     <div className='Service_Box'>
 
@@ -43,19 +69,31 @@ function Service() {
 
             <div className="s2_left_side">
                 
-                <p>Trip Tricks is the Best Travel and Tourism Agency in Dhaka Bangladesh.</p>
+                <div className="s2_left_side_box">
 
-                <img src={govtAgency} alt="" />
+                    <p>Trip Tricks is the Best Travel and Tourism Agency in Dhaka Bangladesh.</p>
+                    <img src={govtAgency} alt="" />
+
+                </div>
 
             </div>
 
             <div className="s2_right_side">
-
-                <div className="cout">
-                    
-                </div>
+                <span>Travelers served last year.</span>
+                <div className="count" id='counter'></div>
             
             </div>
+
+
+        </div>
+
+
+
+        <div className="section3">
+            
+
+            <img className='shape1' src={shape1} alt="" />
+   
 
 
         </div>
